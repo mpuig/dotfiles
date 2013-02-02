@@ -31,19 +31,21 @@ brew install wget --enable-iri
 # Install everything else
 #brew install ack
 #brew install exiv2
-#brew install git
+brew install git
 #brew install imagemagick
 #brew install lynx
-#brew install node
+brew install node
 #brew install rename
 #brew install rhino
 #brew install tree
 #brew install webkit2png
-#brew install python 
+brew install python --framework
 brew install memcached 
 brew install redis
+brew install mysql
 brew install postgresql --without-ossp-uuid
 brew install gdal --with-postgres
 brew install postgis
 brew install --HEAD osm2pgsql
 brew install chromedriver
+pip install virtualenvwrapper
