@@ -2,8 +2,6 @@ syspip install numpy  # required for postgis
 
 
 
-initdb -E utf8
-
 #If you don't have Postgres installed yet:
 # https://github.com/tsaleh/tammer-saleh/blob/master/views/posts/installing-postgresql-for-rails-3-1-on-lion.html.textil
 
@@ -13,6 +11,7 @@ initdb -E utf8
 
 #1. Install Postgres 9.1.5. 
 brew install postgres https://github.com/mxcl/homebrew/commit/1c8c93633f446ef0ddff553d5081cd0548c91687#Library/Formula/postgresql.rb
+initdb -E utf8
 brew install gdal --with-postgres
 
 
