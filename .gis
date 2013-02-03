@@ -14,6 +14,8 @@ brew install postgres https://github.com/mxcl/homebrew/commit/1c8c93633f446ef0dd
 initdb -E utf8
 brew install gdal --with-postgres
 
+# install geos 3.3.5
+brew install geos https://github.com/mxcl/homebrew/commit/933ef026bcff0bf441f3a864c9c7590a9fbba265#Library/Formula/geos.rb
 
 #2. Install postgis 1.5.3. Latest is 2.0.0, so using url old formula on github
 brew install https://raw.github.com/mxcl/homebrew/8a04a43763906e6a9bef68881acf997f3a6f6687/Library/Formula/postgis.rb
