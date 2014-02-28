@@ -43,13 +43,13 @@ brew install node
 #brew install rhino
 #brew install tree
 #brew install webkit2png
-brew install python --framework
+brew install python --framework --with-brewed-openssl
 syspip install virtualenvwrapper
 
-brew install memcached 
+#brew install memcached
 brew install redis
 brew install mysql
-brew install chromedriver
+#brew install chromedriver
 
 # Remove outdated versions from the cellar
 brew cleanup
