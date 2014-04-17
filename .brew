@@ -51,5 +51,17 @@ brew install redis
 brew install mysql
 #brew install chromedriver
 
+# Docker on OSX
+# Source: http://blog.javabien.net/2014/03/03/setup-docker-on-osx-the-no-brainer-way/
+brew update
+brew tap phinze/homebrew-cask
+brew install brew-cask
+brew cask install virtualbox
+
+brew install docker
+brew install boot2docker
+boot2docker init
+boot2docker up
+
 # Remove outdated versions from the cellar
 brew cleanup

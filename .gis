@@ -1,12 +1,11 @@
 syspip install numpy  # required for postgis
 brew install --with-icu --build-from-source boost
 
-brew install cairo
-brew install postgresql
 brew install postgis
-brew install geos
+#brew install geos
 brew install gdal --with-postgres
-brew install mapnik --with-gdal --with-geos --with-cairo
+brew install py2cairo
+brew install mapnik --with-gdal --with-geos --with-postgresql --with-cairo
 
 # Create a template to be used on creating GIS-enabled databases
 # More info: http://postgis.net/docs/postgis_installation.html
