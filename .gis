@@ -18,5 +18,3 @@ psql -d template_postgis -c "SELECT postgis_full_version();"
 
 # Set template permissions to marc
 createuser marc;
-
-

@@ -51,6 +51,9 @@ brew install redis
 brew install mysql
 #brew install chromedriver
 
+brew install tokyo-cabinet
+brew install protobuf
+
 # Docker on OSX
 # Source: http://blog.javabien.net/2014/03/03/setup-docker-on-osx-the-no-brainer-way/
 brew update
