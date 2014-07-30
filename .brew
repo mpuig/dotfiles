@@ -49,6 +49,7 @@ syspip install virtualenvwrapper
 #brew install memcached
 brew install redis
 brew install mysql
+brew install mongodb
 #brew install chromedriver
 
 brew install tokyo-cabinet
