@@ -30,3 +30,8 @@ syspip(){
 }
 export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Golang
+#mkdir $HOME/Projects/go
+export GOPATH=$HOME/Projects/go
+export PATH=$PATH:$GOPATH/bin
