@@ -435,6 +435,10 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Safari & WebKit                                                             #
 ###############################################################################
 
+# Press Command+Option+left/right to move between tabs
+defaults write -app Safari NSUserKeyEquivalents -dict-add "Show Next Tab" "@~\U2192"
+defaults write -app Safari NSUserKeyEquivalents -dict-add "Show Previous Tab" "@~\U2190"
+
 # Privacy: don’t send search queries to Apple
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 defaults write com.apple.Safari SuppressSearchSuggestions -bool true
