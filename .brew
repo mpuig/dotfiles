@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install GNU core utilities (those that come with OS X are outdated)
+brew install coreutils
+echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
+# Install Bash 4
+brew install bash
+
+# Install wget with IRI support
+brew install wget
+
+# Install RingoJS and Narwhal
+# Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
+#brew install ringojs
+#brew install narwhal
+
+# Install more recent versions of some OS X tools
+#brew tap homebrew/dupes
+#brew install homebrew/dupes/grep
+#brew tap josegonzalez/homebrew-php
+#brew install php54
+
+# These two formulae didn’t work well last time I tried them:
+#brew install homebrew/dupes/vim
+#brew install homebrew/dupes/screen
+
+# Install everything else
+#brew install ack
+#brew install exiv2
+#brew install git
+#brew install imagemagick
+#brew install lynx
+brew install node
+#brew install rename
+#brew install rhino
+#brew install tree
+#brew install webkit2png
+brew install python
+#syspip install virtualenvwrapper
+
+#brew install memcached
+brew install redis
+brew install mysql
+brew install mongodb
+#brew install chromedriver
+
+brew install tokyo-cabinet
+brew install protobuf
+
+# Docker on OSX
+# Source: http://blog.javabien.net/2014/03/03/setup-docker-on-osx-the-no-brainer-way/
+brew update
+brew tap phinze/homebrew-cask
+brew install brew-cask
+brew cask install virtualbox
+
+brew install docker
+#brew install boot2docker
+#boot2docker init
+#boot2docker up
+
+# Remove outdated versions from the cellar
+brew cleanup
