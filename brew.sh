@@ -36,7 +36,10 @@ fi;
 brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
+# https://stackoverflow.com/questions/41502146/git-gpg-onto-mac-osx-error-gpg-failed-to-sign-the-data/41506446
 brew install gnupg
+brew install gpg2
+brew install pinentry
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
