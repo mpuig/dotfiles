@@ -47,6 +47,8 @@ brew install screen
 # Install other useful binaries.
 brew install git
 brew install pyenv
+brew install gsl
+# brew install postgresql
 
 # Remove outdated versions from the cellar.
 brew cleanup
